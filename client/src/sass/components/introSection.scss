@@ -1,0 +1,116 @@
+.blob__container__section {
+    background: url("../../assets/blob_back.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-origin: content-box;
+}
+
+.intro__section {
+    margin-top:10rem;
+    font-family:$font-1;
+    color: rgba(#000, 0.7);
+    font-weight: 700;
+    .intro__section__heading {
+        font-size:4rem;
+    }
+    .intro__section__para {
+        text-align: center;
+        font-size:1.3rem;
+    }
+}
+
+.type__heading_1 {
+    padding: 2rem;
+    font-size: 90px;
+    font-family: $font-1;
+    font-weight:900;
+    background: linear-gradient(89.91deg, #0C85C9 0.12%, #870079 40.35%, rgba(#AC2222, 0.8) 60.25%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // color:#7e7e7e;
+}
+
+@media (min-width:121px) and (max-width:375px) {
+    .intro__section {
+    margin-top:3rem;
+    color: rgba(#000, 0.7);
+    font-weight: 700;
+    .intro__section__heading {
+        font-size:1.5rem;
+        }
+    .intro__section__para {
+        font-size:0.8rem;
+        }
+    }
+
+    .blob__container__section {
+        background: url("../../assets/blob_back.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+    .brand {
+        color: rgba(#000, 0.7);
+    }
+    .type__heading_1 {
+        display: none;
+    }
+}
+
+@media (min-width:375.98px) and (max-width:550px) {
+    .intro__section {
+    margin-top:3rem;
+    color: rgba(#000, 0.7);
+    font-weight: 700;
+    .intro__section__heading {
+        font-size:2rem;
+    }
+    .intro__section__para {
+        font-size:1.1rem;
+    }
+    }
+    .blob__container__section {
+        background: url("../../assets/blob_back.svg");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-attachment: fixed;
+    }
+    .type__heading_1 {
+        // padding: 4rem 0;
+        font-size: 55px;
+    }
+
+}
+
+@media (min-width:550.98px) and (max-width:767.98px) {
+    .intro__section {
+    margin-top:4rem;
+    .intro__section__heading {
+        font-size:2.5rem;
+    }
+    .intro__section__para {
+        font-size:1.3rem;
+    }
+    }
+    .type__heading_1 {
+        // padding: 4rem 0;
+        font-size: 55px;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .intro__section {
+    margin-top:4rem;
+    .intro__section__heading {
+        font-size:3rem;
+    }
+    .intro__section__para {
+        font-size:1.5rem;
+    }
+    }
+    .type__heading_1 {
+        // padding: 4rem 0;
+        font-size: 64px;
+    }
+}

@@ -1,0 +1,41 @@
+.topSection_container {
+    height:60vh;
+}
+
+.logo-banner{
+    background: linear-gradient(to right,#FF6F00,#FF9100);
+    border-radius: 25px 0px 0px 25px;
+    h1, h3 {
+        color:#0D0002;
+        font-family: $font-1;
+        text-transform: uppercase;
+        font-weight:700;
+    }
+    h1 {
+        font-size:4rem; 
+    }
+    h3 {
+        font-size:2rem;
+    }
+    .rotaract__logo {
+        height:8rem;
+    }
+}
+
+
+.arrow_to_top {
+    position: absolute;
+    right:0;
+    color: #fff;
+    &:hover {
+        cursor: pointer;
+    }
+}
+@keyframes viewGalleryButton {
+    from {
+        padding-bottom:1.5rem;
+    }
+    to {
+        padding-bottom:1rem;
+    }
+}

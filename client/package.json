@@ -1,0 +1,59 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.1",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.3.0",
+    "aos": "^2.3.4",
+    "aws-sdk": "^2.804.0",
+    "axios": "^0.21.0",
+    "bootstrap": "^4.5.3",
+    "d3": "^6.2.0",
+    "font-awesome": "^4.7.0",
+    "framer-motion": "^2.9.5",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-d3-library": "^1.1.8",
+    "react-dom": "^17.0.1",
+    "react-imgix": "^9.0.3",
+    "react-pdf": "^5.0.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "react-toastify": "^6.2.0",
+    "react-typist": "^2.0.5",
+    "rsuite": "^4.8.5",
+    "sass": "^1.29.0",
+    "scrollreveal": "^4.0.7",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://52.89.204.156/"
+}

@@ -1,0 +1,17 @@
+.description {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+    p {
+        font-size:18px;
+        font-family: $font-1;
+        padding:2rem;
+    }
+}
+.description__heading {
+    font-size:2.4rem;
+    text-transform: uppercase;
+    font-weight:800;
+    letter-spacing: 2.5rem;
+    font-family: $font-2;
+    color:#494949;
+}

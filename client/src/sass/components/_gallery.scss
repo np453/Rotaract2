@@ -1,0 +1,26 @@
+.img_gallery_container {
+    background-color: #111;
+    margin: 10rem 0 15rem 0;
+    img {
+        filter: grayscale(100%);
+    }
+    span {
+        font-family: $font-1;
+        color: rgba(white, 0.8);
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+}
+
+.img_gallery_navbar {
+    margin-left: auto;
+    .img_gallery_link {
+        font-size: 16px;
+    }
+}
+
+@media (min-width:121px) and (max-width:1202px) {
+    .img_gallery_navbar {
+        margin-left: 0;
+    }
+}

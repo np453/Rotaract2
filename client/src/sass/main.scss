@@ -1,0 +1,26 @@
+@import "./abstracts/variables";
+@import "./components/topSection"; 
+@import "./components/button"; 
+@import "./components/description"; 
+@import "./components/form";
+@import "./components/footer";
+@import "./components/navbar";
+@import "./components/introSection";
+@import "./components/ourVision";
+@import "./components/shareExp";
+@import "./components/ourworks";
+@import "./components/shareStoryForm";
+@import "./components/blog";
+@import "./components/cube";
+@import "./components/gallery";
+@import "./components/scrollbar";
+html {
+    scroll-behavior: smooth !important;
+}
+a {
+    color:rgba(#000, 0.8) !important;
+    text-decoration: none !important;
+}
+::selection {
+    background-color: rgba(0, 231, 217, 0.2);
+}

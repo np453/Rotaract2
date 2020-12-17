@@ -1,0 +1,143 @@
+.navbar-nav {
+    span {
+        cursor: pointer;
+    }
+}
+
+
+/*navbar collapse button*/
+.icon-bar {
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.6rem;
+    background-color: #000;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px
+}
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+  }
+  
+  .navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: -2%;
+  }
+  
+  .navbar-toggler .middle-bar {
+    opacity: 0;
+  }
+  
+  .navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: -10%;
+  }
+  
+  .navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+  }
+  
+  .navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+  }
+  
+  .navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+  }
+  button.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus{
+    outline: none !important;
+    border:none;
+    box-shadow:none;
+}
+
+.brand {
+    font-size:36px !important;
+    font-family:$font-1;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.7);
+}
+.nav__link {
+    // margin-right: 1.6rem;
+    padding-bottom: 0.3rem;
+    font-family:$font-1;
+    font-weight: 900;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.2s ease-in-out;
+    }
+    &:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+
+}
+
+
+@media (min-width:121px) and (max-width:375px) {
+    .brand {
+        font-size:24px !important;
+        font-family:$font-1;
+    }
+    .nav__link {
+        background-color: transparent;
+        padding: 0;
+        span {
+            padding:0;
+        }
+    
+    }
+}
+
+@media (min-width:375.98px) and (max-width:550px) {
+    .brand {
+        font-size:28px !important;
+        font-family:$font-1;
+    }
+    .nav__link {
+        padding: 0;
+        span {
+            padding:0;
+        }
+    
+    }
+}
+
+@media (min-width:550.98px) and (max-width:767.98px) {
+    .brand {
+        font-size:34px !important;
+        font-family:$font-1;
+    }
+    .nav__link {
+        padding: 0;
+        span {
+            padding:0;
+        }
+    
+    }
+}
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .brand {
+        font-size:36px !important;
+        font-family:$font-1;
+    }
+    .nav__link {
+        padding: 0;
+        span {
+            padding:0;
+        }
+    
+    }
+}
+
+

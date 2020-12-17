@@ -1,0 +1,90 @@
+.share__experience__section {
+    font-family:$font-1;
+    margin: 10rem 0;
+    .shareExpSection {
+        background-color: #AD2A4B;
+        h1 {
+            color: #E9E9E9;
+            padding:2rem;
+        }
+    }
+    
+}
+
+@media (min-width:121px) and (max-width:375px) {
+    .shareExpSection {
+        h1 {
+            font-size:1.4rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem ;
+    }
+}
+
+@media (min-width:375.98px) and (max-width:550px) {
+    .shareExpSection {
+        h1 {
+            font-size:1.7rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem ;
+    }
+}
+
+@media (min-width:550.98px) and (max-width:650px) {
+    .shareExpSection {
+        h1 {
+            font-size:1.9rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem ;
+    }
+}
+
+@media (min-width:650.98px) and (max-width:767.98px) {
+    .shareExpSection {
+        h1 {
+            font-size:2.2rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem ;
+    }
+}
+
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .shareExpSection {
+        h1 {
+            font-size:1.8rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem 1.7rem ;
+    }
+}
+
+@media (min-width:992px) and (max-width:1202px) {
+    .shareExpSection {
+        h1 {
+            font-size:2rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem ;
+    }
+}
+
+@media (min-width:1202px) {
+    .shareExpSection {
+        h1 {
+            font-size:2.5rem;
+        }
+    }
+    .btn_ {
+        margin:0 1.7rem 1.7rem ;
+    }
+}
