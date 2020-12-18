@@ -4,6 +4,7 @@ import Home from './views/homepage';
 import ShareRotaryStory from './components/shareRotaryStory';
 import Image from './image'
 import Blog from './components/blogs';
+import TestPage from './components/testpage';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/story" component={ShareRotaryStory} />
           <Route path="/upload_image_admin_luffy_6972" component={Image} />
           <Route path="/blog" component={Blog} />
+          <Route path="/test" component={TestPage} />
         </switch>
       </Router>
       

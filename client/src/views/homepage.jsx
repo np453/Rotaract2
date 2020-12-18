@@ -9,6 +9,7 @@ import shareSectionImg from '../assets/shareSectionImg.png';
 import Cube from '../components/common/cube';
 import ShareRotaryStory from '../components/shareRotaryStory';
 import Gallery from '../components/gallery'
+import TestPage from '../components/testpage';
 
 const Workcomponent = React.lazy(()=>import('../components/our_works'));
 
@@ -149,7 +150,6 @@ export default class Homepage extends Component {
                 
                 <div onClick={this.executeStoryTopScroll} className="d-flex justify-content-end p-2 arrow_to_top"><i className="fa fa-2x fa-arrow-up"></i></div>
                 <div ref={this.storyForm} className=""><ShareRotaryStory /></div>
-                
                 {/* <Footer /> */}
             </div>
         )
