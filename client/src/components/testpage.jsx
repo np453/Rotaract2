@@ -9,7 +9,7 @@ const TestPage = props => {
     const yPosAnim = useTransform(scrollYProgress, [0, 0.33], [0, -0])
     const yPosAnim2 = useTransform(scrollYProgress, [0.33, 0.67], [-10, 5])
     const yPosAnim3 = useTransform(scrollYProgress, [0.67, 1], [0, 5])
-    const opacity = useTransform(scrollYProgress, [0, 0.33, 0.331], [0.2, 1, 0])
+    const opacity = useTransform(scrollYProgress, [0, 0.33, 0.331], [0.8, 1, 0])
     const opacity2 = useTransform(scrollYProgress, [0.33, 0.67, 0.671], [0, 1, 0])
     const opacity3 = useTransform(scrollYProgress, [0.671, 1, 1], [0,1, 0])
     const contents = [
@@ -73,9 +73,8 @@ const TestPage = props => {
     return (
         <div className="container-fluid p-0 d-flex justify-content-center align-items-center" style={{height:"150vh"}}> 
             <motion.div className="" >
-                <h1 style={{ y:yPosAnim, opacity: opacity, scale:scaleAnim}} className="content">{content}</h1>
-            </motion.div>         
-            
+                <motion.h1 style={{ y:yPosAnim, opacity: opacity, scale:scaleAnim}} className="content">{content}</motion.h1>
+            </motion.div>          
         </div>
     );
 }
