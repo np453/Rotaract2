@@ -94,7 +94,7 @@ export default class Homepage extends Component {
             <div className="container our_vision_background_wrapper">
             <div className="container our__vision__section">
                 <h1 className="main__heading">Our vision</h1>
-                <div className="col-md-5">
+                <div className="col-md-7">
                 <span className="section__para section__para__ourVision">
                 The motto of the club is service before self. We aim not only to serve
                  society in any possible way but create a feeling of care,

@@ -13,10 +13,10 @@ function App() {
       <Router>
         <switch>
           <Route path="/" exact component={Home} />
-          <Route path="/story" component={ShareRotaryStory} />
+          {/* <Route path="/story" component={ShareRotaryStory} /> */}
           <Route path="/upload_image_admin_luffy_6972" component={Image} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/test" component={TestPage} />
+          {/* <Route path="/blog" component={Blog} /> */}
+          {/* <Route path="/test" component={TestPage} /> */}
         </switch>
       </Router>
       
