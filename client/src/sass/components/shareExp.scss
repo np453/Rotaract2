@@ -8,10 +8,22 @@
             padding:2rem;
         }
     }
+    .share-exp-img-mobile {
+        display: none;
+    }
     
 }
 
 @media (min-width:121px) and (max-width:375px) {
+    .share__experience__section {
+        .top_img {display: none;}
+        .share-exp-img-mobile {
+            display: block;
+        }
+    }
+    .about-us {
+        font-size: 30px;
+    }
     .shareExpSection {
         h1 {
             font-size:1.4rem;
@@ -22,7 +34,16 @@
     }
 }
 
-@media (min-width:375.98px) and (max-width:550px) {
+@media (min-width:375px) and (max-width:550px) {
+    .share__experience__section {
+        .top_img {display: none;}
+        .share-exp-img-mobile {
+            display: block;
+        }
+    }
+    .about-us {
+        font-size: 36px;
+    }
     .shareExpSection {
         h1 {
             font-size:1.7rem;

@@ -53,10 +53,15 @@
   color: white;
   text-align: center;
   outline: 0;
-  border: 1px solid rgba(#000, 0.5);
+  border: 1px solid rgba(rgb(39, 39, 39), 0.5);
   span {
      opacity:0.5;
   }
+}
+
+.s__b__s {
+     // height: 100vh;
+     padding: 6rem;
 }
 
 .cube__face--front, .cube__face--right, .cube__face--back, .cube__face--left, .cube__face--top, .cube__face--bottom {
@@ -102,10 +107,14 @@
      }
      .type__heading_1 {
           display: none;
-      }
+     }
+     .s__b__s {
+          // height: 100vh;
+          padding: 3rem;
+     }
 }
 
-@media (min-width:375.98px) and (max-width:450px) {
+@media (min-width:375px) and (max-width:450px) {
      .scene {
           display:none;
      }

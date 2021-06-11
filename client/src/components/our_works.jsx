@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import axios from '../axios';
 import ScrollReveal from 'scrollreveal';
 
 class Ourworks extends Component {
@@ -11,8 +11,8 @@ class Ourworks extends Component {
         const {data:works} = await axios.get("/ourworks/")
         this.setState({works})
         // ScrollReveal().reveal('.our_works_',{scale:0.85, reset:true }  );
-        ScrollReveal().reveal('.main__works__heading',{origin:"top", distance:"130px", scale:0.85, reset:true }  );
-        ScrollReveal().reveal('.works__wrapper',{origin:"bottom", distance:"130px", scale:0.85, reset:true }  );
+        ScrollReveal().reveal('.main__works__heading',{origin:"top", distance:"130px", scale:0.85, reset:false }  );
+        ScrollReveal().reveal('.works__wrapper',{origin:"bottom", distance:"130px", scale:0.85, reset:false }  );
     }
     
     render() {
@@ -21,7 +21,7 @@ class Ourworks extends Component {
             <div className="container our__works__section pb-4">
                 <h1 className="main__works__heading p-2">Our Works</h1>
                 <div className="col-md-12 works__wrapper">
-                  <div className="row m-0">
+                  <div className="row d-flex justify-content-center m-0">
                       
                         {this.state.works.map(m => 
                         <div className="col-md-4 p-0 m-0">

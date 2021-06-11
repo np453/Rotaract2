@@ -1,5 +1,5 @@
 .blob__container__section {
-    background: url("../../assets/blob_back.svg");
+    // background: url("../../assets/blob_back.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -15,37 +15,38 @@
         font-size:4rem;
     }
     .intro__section__para {
+        margin-top: 2rem;
         text-align: center;
-        font-size:1.3rem;
+        font-size:1.2rem;
     }
 }
 
 .type__heading_1 {
     padding: 2rem;
-    font-size: 90px;
+    font-size: 70px;
     font-family: $font-1;
-    font-weight:900;
-    background: linear-gradient(89.91deg, #0C85C9 0.12%, #870079 40.35%, rgba(#AC2222, 0.8) 60.25%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    // color:#7e7e7e;
+    font-weight:700;
+    // background: linear-gradient(89.91deg, #0C85C9 0.12%, #870079 40.35%, rgba(#AC2222, 0.8) 60.25%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    color:#424242;
 }
 
 @media (min-width:121px) and (max-width:375px) {
     .intro__section {
-    margin-top:3rem;
-    color: rgba(#000, 0.7);
-    font-weight: 700;
+        margin-top:2rem;
+        color: rgba(#000, 0.7);
+        font-weight: 700;
     .intro__section__heading {
         font-size:1.5rem;
         }
     .intro__section__para {
-        font-size:0.8rem;
+        font-size:0.9rem;
         }
     }
 
     .blob__container__section {
-        background: url("../../assets/blob_back.svg");
+        // background: url("../../assets/blob_back.svg");
         background-repeat: no-repeat;
         background-position: right;
     }
@@ -57,7 +58,7 @@
     }
 }
 
-@media (min-width:375.98px) and (max-width:550px) {
+@media (min-width:375px) and (max-width:550px) {
     .intro__section {
     margin-top:3rem;
     color: rgba(#000, 0.7);
@@ -70,7 +71,6 @@
     }
     }
     .blob__container__section {
-        background: url("../../assets/blob_back.svg");
         background-repeat: no-repeat;
         background-position: right;
         background-attachment: fixed;

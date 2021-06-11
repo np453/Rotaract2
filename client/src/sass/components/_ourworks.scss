@@ -30,7 +30,24 @@
     .main__works__heading {
         font-size:2rem !important;
     }
+    .our__works__section {
+        border: none;
+        .main__works__heading {
+            text-align: center;
+        }
+    }
+}
 
+@media (min-width:376px) and (max-width:550px) {
+    .main__works__heading {
+        font-size:2rem !important;
+    }
+    .our__works__section {
+        border: none;
+        .main__works__heading {
+            text-align: center;
+        }
+    }
 }
 
 @media (min-width:550.98px) and (max-width:767.98px) {

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Timeline, Divider } from 'rsuite';
 import 'rsuite/dist/styles/rsuite-default.css';
-import axios from 'axios';
+import axios from '../axios';
 import { Link } from 'react-router-dom';
 import BlogStory from '../components/common/blogStory'
 

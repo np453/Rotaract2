@@ -121,7 +121,7 @@
 
     .story__section {
         position: relative;
-
+ 
         textarea {
             padding: 1rem !important;
             border: none;
@@ -134,7 +134,7 @@
                 display: none;
             }
             label {
-                display: none;
+                // display: none;
                 position: relative;
                 .file_upload_button {
                     position: absolute;
@@ -353,7 +353,7 @@
 }
 
 
-@media (min-width:375.98px) and (max-width:550px) {
+@media (min-width:375px) and (max-width:550px) {
     
     .btn_post_story {
         position: relative;

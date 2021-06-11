@@ -4,10 +4,11 @@ const multer = require('multer')
 const fs = require('fs');
 const File = require("../model/image")
 // mongoose.model('file')
+
 //multer disk storage
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-      cb(null, 'public')
+      cb(null, 'public/')
     },
     filename: function (req, file, cb) {
       cb(null, Date.now() + '-' +file.originalname )
@@ -16,7 +17,7 @@ const storage = multer.diskStorage({
   
 const upload = multer({ storage: storage }).single('file')
 
-router.post('/',function(req, res) {
+router.post('/', function(req, res) {
 
     upload(req, res, async (err) => {
       let fullpath = req.file.path;
