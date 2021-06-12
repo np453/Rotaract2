@@ -78,7 +78,7 @@ export default class Homepage extends Component {
             <div className="container intro__section d-flex justify-content-center">
                 <div className="row">
                     {/* <Typist cursor={{show:false}} avgTypingDelay={50} >
-                        <span className="col-md-12 d-flex justify-content-center intro__section__heading">Let’s share our experience together</span>
+                        <span className="col-md-12 d-flex justify-content-center intro__section__heading">Rotaractives: Spreading smiles</span>
                     </Typist> */}
                     <div className="container-fluid mt-5 mb-5 p-0 share__experience__section">
                 <div className="row m-0 d-flex justify-content-center">
@@ -132,7 +132,7 @@ export default class Homepage extends Component {
                     <div className="col-md-6 shareExpSection d-flex justify-content-center align-items-center">
                         <div className="row m-0">
                             <div className="col-md-12">
-                                <h1>memorable moments captured</h1>
+                                <h1>Glimse of Memorable Moments</h1>
                             </div>
                             <div className="col-md-12">
                                 <Link to="/gallery"><button className="btn_" >view gallery</button></Link>

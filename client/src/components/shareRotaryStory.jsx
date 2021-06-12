@@ -150,13 +150,13 @@ export default class ShareRotaryStory extends Component {
                                 </div>
                                 <div className="col-md-3">
                                     <h3>social media</h3>
-                                    <a  href="https://www.facebook.com/rotaractmnnit"><h5>facebook</h5></a>
+                                    <a target="_blank"  href="https://www.facebook.com/rotaractmnnit"><h5>facebook</h5></a>
                                     {/* <Link to=""><h5>instagram</h5></Link> */}
                                 </div>
                                 <div className="col-md-3">
                                     <h3>Where we are</h3>
                                     <h5>Address</h5>
-                                    <a href="https://www.google.com/maps/place/Motilal+Nehru+National+Institute+of+Technology,+Allahabad/@25.4920102,81.8639163,15z/data=!4m5!3m4!1s0x0:0x6690dd2de3a1415b!8m2!3d25.4920102!4d81.8639163"><p>MNNIT Allahabad</p></a> 
+                                    <a target="_blank" href="https://www.google.com/maps/place/Motilal+Nehru+National+Institute+of+Technology,+Allahabad/@25.4920102,81.8639163,15z/data=!4m5!3m4!1s0x0:0x6690dd2de3a1415b!8m2!3d25.4920102!4d81.8639163"><p>MNNIT Allahabad</p></a> 
                                 </div>
                             </div>
                             {/* <div className="row m-0 d-flex justify-content-around">
@@ -185,7 +185,7 @@ export default class ShareRotaryStory extends Component {
                 <div className="container-fluid p-0">
                 <div className="row">
                     <div className="col-md-12 d-flex justify-content-center developed_by">
-                        Maintained by &nbsp;<span><a href="https://thedevang.com/">Devang</a></span>&nbsp;n&nbsp; <span><a href="https://naman.today/">Naman</a></span>
+                        Maintained by &nbsp;<span><a target="_blank" href="https://thedevang.com/">Devang</a></span>&nbsp;n&nbsp; <span><a target="_blank" href="https://naman.today/">Naman</a></span>
                     </div>
                 </div>
                 </div>
