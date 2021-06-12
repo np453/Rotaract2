@@ -185,7 +185,7 @@ export default class ShareRotaryStory extends Component {
                 <div className="container-fluid p-0">
                 <div className="row">
                     <div className="col-md-12 d-flex justify-content-center developed_by">
-                        Developed by &nbsp;<span><a href="https://www.facebook.com/profile.php?id=100005032994738">Devang</a></span>&nbsp;n&nbsp; <span><a href="https://www.facebook.com/npns99">Naman</a></span>
+                        Maintained by &nbsp;<span><a href="https://thedevang.com/">Devang</a></span>&nbsp;n&nbsp; <span><a href="https://naman.today/">Naman</a></span>
                     </div>
                 </div>
                 </div>
