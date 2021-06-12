@@ -581,7 +581,7 @@ button.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus 
   }
 }
 
-@media (min-width: 375.98px) and (max-width: 550px) {
+@media (min-width: 375px) and (max-width: 550px) {
   .intro__section {
     margin-top: 3rem;
     color: rgba(0, 0, 0, 0.7);
@@ -632,13 +632,6 @@ button.navbar-toggler:focus, .navbar-toggler:active, .navbar-toggler-icon:focus 
   .type__heading_1 {
     font-size: 64px;
   }
-}
-
-.our__vision__section {
-  border-left: 5px solid #042C95;
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-  margin: 10rem 0;
 }
 
 .our__vision__section .main__heading {

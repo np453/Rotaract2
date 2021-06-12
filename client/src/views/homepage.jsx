@@ -9,6 +9,8 @@ import shareSectionImg from '../assets/shareSectionImg.png';
 import Cube from '../components/common/cube';
 import ShareRotaryStory from '../components/shareRotaryStory';
 import Gallery from '../components/gallery'
+import Logo from '../assets/logo.png'
+import shareExpimg3 from '../assets/shareExp3.png'
 import TestPage from '../components/testpage';
 
 const Workcomponent = React.lazy(()=>import('../components/our_works'));
@@ -30,12 +32,12 @@ export default class Homepage extends Component {
     executeStoryTopScroll = () => this.topSection.current.scrollIntoView()
     
     componentDidMount() {
-        ScrollReveal().reveal('.our__works__section',{origin:'bottom', distance: '130px', viewFactor: 0.5, reset:true }  );
-        ScrollReveal().reveal('.share__experience__section',{origin:'left', distance: '130px', viewFactor: 0.5, reset:true }  );
-        ScrollReveal().reveal('.main__heading, .section__para',{origin:'left', distance: '130px', viewFactor: 0.5, reset:true }  );
-        ScrollReveal().reveal('.our_vision_background_wrapper',{origin:'top', distance: '130px', viewFactor: 0.5, reset:true }  );
-        ScrollReveal().reveal('.our__works_',{origin:'left', distance: '130px', viewFactor: 0.6 }  );
-        ScrollReveal().reveal('.s__b__s', { afterReveal:this.renderTypwriter, viewFactor:0.6, reset:true } );
+        // ScrollReveal().reveal('.our__works__section',{origin:'bottom', distance: '130px', viewFactor: 0.5, reset:false }  );
+        // ScrollReveal().reveal('.share__experience__section',{origin:'left', distance: '130px', viewFactor: 0.5, reset:false }  );
+        // ScrollReveal().reveal('.main__heading, .section__para',{origin:'left', distance: '130px', viewFactor: 0.5, reset:false }  );
+        // ScrollReveal().reveal('.our_vision_background_wrapper',{origin:'top', distance: '130px', viewFactor: 0.5, reset:false }  );
+        // ScrollReveal().reveal('.our__works_',{origin:'left', distance: '130px', viewFactor: 0.6 }  );
+        ScrollReveal().reveal('.s__b__s', { afterReveal:this.renderTypwriter, viewFactor:0.6, reset:false } );
     }
     renderTypwriter = () => {
         this.setState({animate1 :1, show:false})
@@ -62,29 +64,35 @@ export default class Homepage extends Component {
                     <div className="collapse navbar-collapse" id="landingPageNavbar">
                         <div className="navbar-nav ml-auto align-items-center">
                             {/* <Link onClick={this.executeFormScroll}><span className="mr-3 nav__link">Join us</span></Link> */}
-                            <Link onClick={this.executeGalleryScroll}><span className="nav__link">View gallery</span></Link>
+                            <Link to="/gallery"><span className="nav__link">View gallery</span></Link>
                         </div>
                     </div>
                 </nav>
+                <div className="rotaract-logo-wrapper">
+                    <img src={Logo} className="rotaract-logo" alt="" />
+                </div>
                 </div>   
             </div>
             
             {/*intro section*/}
             <div className="container intro__section d-flex justify-content-center">
                 <div className="row">
-                    <Typist cursor={{show:false}} avgTypingDelay={50} ><span className="col-md-12 d-flex justify-content-center intro__section__heading">Let’s share our experience together</span></Typist>
-                    <span className="col-md-12 d-flex justify-content-center intro__section__para">
-                    About the club
-                    Rotaract Club of MNNIT is an  international service organization  under the Rotary International,
-                     for  all who wish to create a difference  in the society today.<br/>
-                    We were established on 28  May,2015 under the club  sponsorship of Rotary Club of  Allahabad Elite,
-                     Uttar Pradesh, India.  From a humble 15 members team  size we have grown to a 60+ member  team.
-                    </span>
+                    {/* <Typist cursor={{show:false}} avgTypingDelay={50} >
+                        <span className="col-md-12 d-flex justify-content-center intro__section__heading">Let’s share our experience together</span>
+                    </Typist> */}
                     <div className="container-fluid mt-5 mb-5 p-0 share__experience__section">
                 <div className="row m-0 d-flex justify-content-center">
-                    <img src={shareExpimg} className="img img-fluid top_img" alt=""/>
-                    {/* <img src={shareExpimg2} className="img2 img img-fluid w-100" alt=""/> */}
+                    <img style={{ pointerEvents:"none" }} src={shareExpimg} className="img img-fluid top_img" alt=""/>
+                    <img src={shareExpimg3} className="share-exp-img-mobile img2 img img-fluid w-100" alt=""/>
                 </div>
+                    <h3 className="about-us"><span>About Us</span></h3>
+                    <span className="col-md-12 d-flex justify-content-center intro__section__para">
+                        About the club
+                        Rotaract Club of MNNIT is an  international service organization  under the Rotary International,
+                        for  all who wish to create a difference  in the society today.<br/>
+                        We were established on 28  May,2015 under the club  sponsorship of Rotary Club of  Allahabad Elite,
+                        Uttar Pradesh, India.  From a humble 15 members team  size we have grown to a 60+ member  team.
+                    </span>
             </div>
                 </div>
             </div>
@@ -92,17 +100,17 @@ export default class Homepage extends Component {
 
             {/*our vision*/}
             <div className="container our_vision_background_wrapper">
-            <div className="container our__vision__section">
-                <h1 className="main__heading">Our vision</h1>
-                <div className="col-md-7">
-                <span className="section__para section__para__ourVision">
-                The motto of the club is service before self. We aim not only to serve
-                 society in any possible way but create a feeling of care,
-                 responsibility and duty among the students of the college.
-                   
-                </span>
+                <div className="container our__vision__section">
+                    <h1 className="main__heading"><span>Our vision</span></h1>
+                    <div className="">
+                    <span className="section__para text-center section__para__ourVision">
+                    The motto of the club is service before self. We aim not only to serve
+                    society in any possible way but create a feeling of care,
+                    responsibility and duty among the students of the college.
+                    
+                    </span>
+                    </div>
                 </div>
-            </div>
             </div>
 
 
@@ -119,16 +127,15 @@ export default class Homepage extends Component {
             <div className="container-fluid p-0 share__experience__section">
                 <div className="row m-0">
                     <div className="col-md-6 p-0">
-                        <img src={shareSectionImg} className="img img-fluid w-100" alt=""/>
+                        <img style={{ pointerEvents:"none" }} src={shareSectionImg} className="img img-fluid w-100" alt=""/>
                     </div>
                     <div className="col-md-6 shareExpSection d-flex justify-content-center align-items-center">
                         <div className="row m-0">
                             <div className="col-md-12">
-                            <h1>Share your rotary story with us</h1>
-                        
+                                <h1>memorable moments captured</h1>
                             </div>
                             <div className="col-md-12">
-                            <Link onClick={this.executeStoryFormScroll}><button className="btn_" >Share your rotary story</button></Link>
+                                <Link to="/gallery"><button className="btn_" >view gallery</button></Link>
                             </div>
                         </div>
                     </div>
@@ -144,9 +151,9 @@ export default class Homepage extends Component {
                     </div>
                 </div>
             </div>
-            <div ref={this.gallery}>
+            {/* <div ref={this.gallery}>
                     <Gallery />
-            </div>
+            </div> */}
                 
                 <div onClick={this.executeStoryTopScroll} className="d-flex justify-content-end p-2 arrow_to_top"><i className="fa fa-2x fa-arrow-up"></i></div>
                 <div ref={this.storyForm} className=""><ShareRotaryStory /></div>

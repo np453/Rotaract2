@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import ScrollReveal from 'scrollreveal';
-import axios from 'axios';
+import axios from '../axios';
 const TestPage = props => {
     const { scrollYProgress } = useViewportScroll()
     const scaleAnim = useTransform(scrollYProgress, [0, 0.33], [1, 1.5])
