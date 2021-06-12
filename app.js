@@ -84,7 +84,7 @@ app.post("/rotary_story",async(req,res)=>{
     });
 })
 
-app.use(express.json());
+
 
 app.get('*', (req,res) =>{
     res.sendFile(path.join(__dirname+'/client/build/index.html'));

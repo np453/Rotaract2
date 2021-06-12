@@ -1,17 +1,15 @@
 import React, { Component,Suspense } from 'react'
 import { Link } from 'react-router-dom';
-import ReactDOM from 'react-dom';
 import '../sass/main.scss';
 import Typist from 'react-typist';
 import ScrollReveal from 'scrollreveal';
-import shareExpimg from '../assets/topSectionImg.png';
-import shareSectionImg from '../assets/shareSectionImg.png';
+import shareExpimg from '../assets/topSectionImg.jpg';
+import shareSectionImg from '../assets/shareSectionImg.jpg';
 import Cube from '../components/common/cube';
 import ShareRotaryStory from '../components/shareRotaryStory';
-import Gallery from '../components/gallery'
 import Logo from '../assets/logo.png'
-import shareExpimg3 from '../assets/shareExp3.png'
-import TestPage from '../components/testpage';
+import shareExpimg3 from '../assets/shareExp3.jpg'
+
 
 const Workcomponent = React.lazy(()=>import('../components/our_works'));
 

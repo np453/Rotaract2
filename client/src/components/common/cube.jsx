@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import img from '../../assets/works_old.jpg'
 import logo from '../../assets/logo.png'
 export default class Cube extends Component {
     state = {
