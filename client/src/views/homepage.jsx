@@ -130,7 +130,7 @@ export default class Homepage extends Component {
                     <div className="col-md-6 shareExpSection d-flex justify-content-center align-items-center">
                         <div className="row m-0">
                             <div className="col-md-12">
-                                <h1>Glimse of Memorable Moments</h1>
+                                <h1>Glipmse of Memorable Moments</h1>
                             </div>
                             <div className="col-md-12">
                                 <Link to="/gallery"><button className="btn_" >view gallery</button></Link>
